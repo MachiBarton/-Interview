@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<style type="text/css" media="screen">
+    html * {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body>
+    <section class="layout float">
+        <style type="text/css" media="screen">
+            .layout.float .warpper>div {
+                min-height: 100px;
+            }
+
+            .layout.float .warpper .left {
+                background: yellowgreen;
+                width: 300px;
+                float: left;
+            }
+
+            .layout.float .warpper .right {
+                background: yellowgreen;
+                width: 300px;
+                float: right;
+            }
+
+            .layout.float .warpper .mid {
+                background: red;
+
+            }
+        </style>
+
+        <article class="warpper">
+            <div class="left">左</div>
+
+            <div class="right">右</div>
+            <div class="mid">中</div>
+        </article>
+
+    </section>
+    <br />
+    <section class="layout absolute ">
+        <style type="text/css" media="screen">
+            .layout.absolute .wrapper {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .layout.absolute .warpper div {
+                min-height: 100px;
+            }
+
+            .layout.absolute .warpper .left {
+                background: yellowgreen;
+                width: 300px;
+                left: 0;
+                position: absolute;
+            }
+
+            .layout.absolute .warpper .right {
+                background: yellowgreen;
+                width: 300px;
+                right: 0px;
+                position: absolute;
+            }
+
+            .layout.absolute .warpper .mid {
+                background: red;
+                position: absolute;
+                left: 300px;
+                right: 300px;
+            }
+        </style>
+
+        <article class="warpper">
+            <div class="left">左</div>
+
+            <div class="right">右</div>
+            <div class="mid">中</div>
+        </article>
+    </section>
+
+
+    <section class="layout flex ">
+        <style type="text/css" media="screen">
+            .layout.flex .warpper {
+                width: 100%;
+                min-height: 100px;
+                display: flex;
+                margin-top: 120px;
+
+            }
+
+
+
+            .layout.flex .warpper .left {
+                background: yellowgreen;
+                width: 300px;
+
+            }
+
+            .layout.flex .warpper .right {
+                background: yellowgreen;
+                width: 300px;
+
+            }
+
+            .layout.flex .warpper .mid {
+                background: red;
+                flex: 1;
+
+            }
+        </style>
+
+        <article class="warpper">
+            <div class="left">左</div>
+            <div class="mid">中</div>
+            <div class="right">右</div>
+
+        </article>
+    </section>
+
+    <section class="layout grid ">
+        <style type="text/css" media="screen">
+            .layout.grid .warpper {
+                width: 100%;
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns: 300px auto 300px;
+                grid-template-rows: 100px;
+
+            }
+
+
+
+            .layout.grid .warpper .left {
+                background: yellowgreen;
+                width: 300px;
+
+            }
+
+            .layout.grid .warpper .right {
+                background: yellowgreen;
+                width: 300px;
+
+            }
+
+            .layout.grid .warpper .mid {
+                background: red;
+
+
+            }
+        </style>
+
+        <article class="warpper">
+            <div class="left">左</div>
+            <div class="mid">中</div>
+            <div class="right">右</div>
+
+        </article>
+    </section>
+
+    <section class="layout table ">
+        <style type="text/css" media="screen">
+            .layout.table .warpper {
+                width: 100%;
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns: 300px auto 300px;
+                grid-template-rows: 100px;
+
+            }
+
+
+
+            .layout.table .warpper .left {
+                background: yellowgreen;
+                width: 300px;
+
+            }
+
+            .layout.table .warpper .right {
+                background: yellowgreen;
+                width: 300px;
+
+            }
+
+            .layout.table .warpper .mid {
+                background: red;
+
+
+            }
+        </style>
+
+        <article class="warpper">
+            <div class="left">左</div>
+            <div class="mid">中</div>
+            <div class="right">右</div>
+
+        </article>
+    </section>
+
+</body>
+
+</html>
